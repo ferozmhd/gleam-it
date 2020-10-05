@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 .sub-header{
     font-size: 22px;
     font-weight: 500;

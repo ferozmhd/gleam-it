@@ -51,6 +51,9 @@
     background-color: #ff4f5a;
     color: #ffffff;
 }
+.training-btn:hover{
+    color: #ffffff;
+}
 .carousel-item{
     width: 50%;
     height: 200px;

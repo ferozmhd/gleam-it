@@ -1,0 +1,96 @@
+/*
+Theme Name: Gleam IT Theme
+Text Domain: gleamittheme
+Version: 1
+Requires at least: 
+Requires PHP: 
+Description:
+Author: 
+Author URI: 
+Theme URI:
+License: GNU General Public License v2 or later
+License URI: 
+*/
+
+
+.sub-header{
+    font-size: 22px;
+    font-weight: 500;
+}
+.description{
+    font-size: 15px;
+    color: #353535;
+    opacity: 5px;
+}
+.logo{
+    width: 250px;
+}
+.banner-img{
+    width: 100%;
+}
+.section-header{
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}   
+.home-header{
+    padding-top: 180px;
+}
+.service{
+    margin-top: 50px;
+}
+.service-content{
+    padding: 30px 10px;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 7px 7px 7px #c4c4c42f;
+}
+.service-img{
+    width: 50px;
+}
+#team{
+    padding-top: 50px;
+}
+.team-img{
+    width: 100%;
+}
+.team-text{
+    padding-top: 100px;
+}
+.training-btn{
+    margin-top: 20px;
+    background-color: #ff4f5a;
+    color: #ffffff;
+}
+.carousel-item{
+    width: 50%;
+    height: 200px;
+    background-color: black;
+}
+.carousel-inner{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* footer */
+footer{
+    margin-top: 50px;
+}
+.footer-logo-container{
+    border-right: 1px solid #35353544;
+}
+.footer-logo{
+    padding-top: 30px;
+    width: 100%;
+}
+.footer-list{
+    list-style-type: none;
+    color: #000000 ;
+    font-style: none;
+    padding-left: 10px !important;    
+}
+.footer-list>li{
+    padding: 5px 0px 10px 15px;
+}
+.footer-list>li>a{
+    color: #000000;
+}

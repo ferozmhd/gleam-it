@@ -13,6 +13,9 @@
 .banner-img{
     width: 100%;
 }
+.nav-link{
+    color: #000000;
+}
 .section-header{
     font-size: 40px;
     font-weight: 700;

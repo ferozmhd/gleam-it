@@ -28,6 +28,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/fa0641d298.js"></script>
 </head>
 
 <body>
@@ -37,15 +39,15 @@
                 <a class="navbar-brand" href="#">
                     <img src="./images/logo.png" alt="Image" class="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon btn btn-primary"></span>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link active" href="#">About us</a>
-                        <a class="nav-item nav-link" href="#">Training</a>
-                        <a class="nav-item nav-link" href="#">Blog</a>
+                        <!-- <a class="nav-item nav-link" href="#">Training</a>
+                        <a class="nav-item nav-link" href="#">Blog</a> -->
                         <a class="nav-item nav-link" href="#">Contact us</a>
                     </div>
                 </div>
@@ -65,7 +67,7 @@
                         officia similique voluptatibus beatae aliquid!
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-first order-md-2">
                     <img src="./images/banner-img.jpg" alt="Image" class="banner-img">
                 </div>
             </div>
@@ -81,7 +83,7 @@
                 quidem ad! Id ullam laudantium, labore illum aliquam vitae nobis unde rem quidem ipsa facilis amet.
             </div>
             <div class="row">
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -92,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -103,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -114,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -127,7 +129,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -138,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -149,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -160,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 service">
+                <div class="col-xs-6 col-md-3 service">
                     <div class="service-content">
                         <img src="./images/Group 59.png" alt="Image" class="service-img">
                         <div class="sub-header">
@@ -177,13 +179,15 @@
     <section id="team">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        Team
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <img src="./images/team.jpg" alt="Image" class="team-img">
                 </div>
                 <div class="col-md-6 team-text">
-                    <div class="section-header text-center">
-                        Team
-                    </div>
                     <div class="description">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor incidunt alias dignissimos, quo
                         velit sapiente officia delectus aperiam dolorem temporibus inventore iste corrupti, vero
@@ -196,10 +200,14 @@
     <section id="training">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 team-text">
-                    <div class="section-header text-center">
+                <div class="col-md-12">
+                    <div class="section-header training-header text-center">
                         We Offer training
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 team-text">
                     <div class="description">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor incidunt alias dignissimos, quo
                         velit sapiente officia delectus aperiam dolorem temporibus inventore iste corrupti, vero
@@ -207,7 +215,7 @@
                     </div>
                     <button class="btn training-btn ml-auto">Know More</button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-first order-md-2">
                     <img src="./images/training.jpg" alt="Image" class="team-img">
                 </div>
             </div>
@@ -245,7 +253,7 @@
                 <div class="col-md-3 footer-logo-container">
                     <img src="./images/logo.png" alt="Image" class="footer-logo">
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-md-3">
                     <ul class="footer-list">
                         <li class="sub-header"><a href="">Company</a></li>
                         <li class="description"><a href="">About us</a></li>
@@ -253,7 +261,7 @@
                         <li class="description"><a href="">Training</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-md-3">
                     <ul class="footer-list">
                         <li class="sub-header"><a href="">Blog</a></li>
                         <li class="description"><a href="">Project Blog</a></li>

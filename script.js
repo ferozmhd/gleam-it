@@ -1,4 +1,4 @@
-
+$(document).ready(function () {
   $('.carousel').carousel({
     interval: 2000,
   })
@@ -49,6 +49,7 @@
     return false;
   });
   $(".current-year").html(new Date().getFullYear());
+});
 // $('.sidebar a').on('click', function (e) {
 //   var scrollAnchor = $(this).attr('data-scroll'),
 //       scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 10;

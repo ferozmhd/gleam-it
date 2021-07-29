@@ -125,7 +125,7 @@ footer{
 }
 .sidebar-list-item{
     padding: 10px;
-    writing-mode: vertical-rl; 
+    /* writing-mode: vertical-rl;  */
 }
 .sidebar-list-item>a{
     color: #000000;
@@ -134,15 +134,27 @@ footer{
     text-decoration: none;
 }
 .sidebar-active{
-    border-left: 1px solid #ff4f5a;
+    border-left: 2px solid #ff4f5a;
 }
-#dilkiawaz{
+#helpdesk{
     background-color: #ddf0fe;
 }
-#smartbus{
-    background-color: #fdf8f2;
+#dilkiawaz{
+    background-color: #feedff;
 }
-
+#smartbus{
+    background-color: #ddf0fe;
+}
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    z-index: 100;
+}
+.whatsapp img {
+    height: 60px;
+}
 @media only screen  and (max-width : 768px){
     .home-header{
         padding-top: 30px;
@@ -167,6 +179,19 @@ footer{
         padding-top: 0px;
         padding-bottom: 10px;
         width: 60%;
+    }
+    .sidebar-list{
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    .sidebar-list-item{
+        padding: 10px;
+        writing-mode: vertical-rl; 
+        transform: rotate(180deg);
+    }
+    .sidebar-active{
+        border-right: 2px solid #ff4f5a;
+        border-left: none;
     }
 }
 @media only screen  and (max-width : 576px){

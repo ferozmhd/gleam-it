@@ -1,8 +1,19 @@
+:root {
+    --light: #ffffff;
+    --dark: #000000;    
+  }
 *{
     scroll-behavior: smooth;
 }
+.nav-active{
+    border-bottom: 1px solid orange;
+}
 .sub-header{
     font-size: 22px;
+    font-weight: 500;
+}
+.small-header{
+    font-size: 12px;
     font-weight: 500;
 }
 .description{
@@ -24,18 +35,19 @@
     font-size: 40px;
     font-weight: 700;
     padding-bottom: 20px;
-}   
+}
 .home-header{
-    padding-top: 180px;
+    padding-top: 100px;
 }
 .service{
     margin-top: 30px;
 }
 .service-content{
     padding: 30px 10px;
-    min-height: 300px;
+    min-height: 250px;
     background-color: #ffffff;
-    box-shadow: 7px 7px 7px #c4c4c42f;
+    border-radius:  10px;
+    box-shadow: 0px 7px 7px 7px #c4c4c42f;
 }
 .service-img{
     width: 50px;
@@ -47,7 +59,12 @@
     width: 100%;
 }
 .team-text{
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    display: flex;
+    align-items: center;
+}
+.small-text{
+    font-size: 12px;
 }
 .training-btn{
     margin-top: 20px;
@@ -57,10 +74,9 @@
 .training-btn:hover{
     color: #ffffff;
 }
-.carousel-item{
-    width: 50%;
-    height: 200px;
-    background-color: black;
+.carousel-item>img{
+    width: 100%;
+    height: auto;
 }
 .carousel-inner{
     margin-left: auto;
@@ -93,6 +109,40 @@ footer{
     padding: 20px;
     background-color: #f5f5f5bb;
 }
+.project-about{
+    margin-top: 20px;
+}
+/* sidebar  */
+.sidebar {
+    display: inline-block;
+    float: left;
+    position: sticky;
+    top: 200px;
+}
+.sidebar-list{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.sidebar-list-item{
+    padding: 10px;
+    writing-mode: vertical-rl; 
+}
+.sidebar-list-item>a{
+    color: #000000;
+}
+.sidebar-list-item>a:hover{
+    text-decoration: none;
+}
+.sidebar-active{
+    border-left: 1px solid #ff4f5a;
+}
+#dilkiawaz{
+    background-color: #ddf0fe;
+}
+#smartbus{
+    background-color: #fdf8f2;
+}
+
 @media only screen  and (max-width : 768px){
     .home-header{
         padding-top: 30px;
@@ -117,5 +167,15 @@ footer{
         padding-top: 0px;
         padding-bottom: 10px;
         width: 60%;
+    }
+}
+@media only screen  and (max-width : 576px){
+    .sidebar{
+        display: none;
+    }
+    .carousel-item>img{
+        width: 50%;
+        height: auto;
+        margin: auto;
     }
 }

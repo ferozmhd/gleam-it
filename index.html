@@ -9,17 +9,15 @@
     </title>
     <!-- theme css -->
 
-    <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="./images/icons/favicon.png" type="image/gif" sizes="16x16">
 
     <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="script.js"></script>
     <!-- cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -46,212 +44,243 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link active" href="#">About us</a>
+                        <a class="nav-item nav-link nav-active" href="#">About us</a>
+                        <a class="nav-item nav-link" href="projects.html">Projects</a>
                         <a class="nav-item nav-link" href="#training">Training</a>
-                        <!-- <a class="nav-item nav-link" href="#">Blog</a> -->
-                        <a class="nav-item nav-link" href="#">Contact us</a>
+                        <a class="nav-item nav-link" href="#contact">Contact us</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="home-header section-header">
-                        Gleam IT Solutions
-                    </div>
-                    <div class="description">
-                        GleamItsolutions is a Software development and IT consulting company that specializes in Web
-                        Development, Web Designing, Mobile Applications Development, consulting, Outsourcing and Digital
-                        Marketing. We consistently cost-effectively provide high-quality software solutions. Our team
-                        has all the right tools, techniques, technologies and skillsets to execute most comprehensive
-                        and complex projects with considerable ease.
-                    </div>
-                </div>
-                <div class="col-md-6 order-first order-md-2">
-                    <img src="./images/banner-img.jpg" alt="Image" class="banner-img">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services">
-        <div class="container">
-            <div class="section-header text-center">
-                What we offer
-            </div>
-            <div class="description">
-                We Offer consulting and custom application development using the best technologies and
-                techniques for outstanding solution design and delivery. We assist our clients with the design, build
-                and management aspects of their transformation to on demand e-businesses. Our main focus is to help
-                position our clients for long-term success.
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 59.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            Web Applications
+    <div class="main-content">
+        <section id="home" name="aboutus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="home-header section-header">
+                            Gleam IT Solutions
                         </div>
                         <div class="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatibus at.
+                            GleamItsolutions is a Software development and IT consulting company that specializes in Web
+                            Development, Web Designing, Mobile Applications Development, consulting, Outsourcing and
+                            Digital
+                            Marketing. We consistently cost-effectively provide high-quality software solutions. Our
+                            team
+                            has all the right tools, techniques, technologies and skillsets to execute most
+                            comprehensive
+                            and complex projects with considerable ease.
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 67.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            Mobile Application Development                            
-                        </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatibus at.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 68.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            Database design
-                        </div>
-                        <div class="description">
-                            Database design, administration, and maintenance
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 69.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            Application development and support
-                        </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatibus at.
-                        </div>
+                    <div class="col-md-6 order-first order-md-2">
+                        <img src="./images/banner-img.jpg" alt="Image" class="banner-img">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 59.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            Software maintenance
+        </section>
+        <section id="services" name="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    What we offer
+                </div>
+                <div class="description">
+                    We Offer consulting and custom application development using the best technologies and
+                    techniques for outstanding solution design and delivery. We assist our clients with the design,
+                    build
+                    and management aspects of their transformation to on demand e-businesses. Our main focus is to help
+                    position our clients for long-term success.
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 59.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Web Applications
+                            </div>
+                            <div class="description">
+                                Laravel, CodeIgnitor, NextJS, NodeJs, Angular and React based applications
+                            </div>
                         </div>
-                        <div class="description">
-                            Database design, administration, and maintenance
+                    </div>
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 67.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Mobile Apps
+                            </div>
+                            <div class="description">
+                                React Native, Flutter, Android and iOS(Xamarin or Swift)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 68.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Database design
+                            </div>
+                            <div class="description">
+                                Database design, administration, and maintenance
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 69.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Application development and support
+                            </div>
+                            <div class="description">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 67.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            Software quality assurance and testing
-                        </div>
-                        <div class="description">
-                            Software quality assurance and testing
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 69.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            E-business and Web applications
-                        </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatibus at.
+                <div class="row">
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 59.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Software maintenance
+                            </div>
+                            <div class="description">
+                                Database design, administration, and maintenance
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-6 service">
-                    <div class="service-content">
-                        <img src="./images/Group 68.png" alt="Image" class="service-img">
-                        <div class="sub-header pt-3">
-                            Training
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 67.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Testing
+                            </div>
+                            <div class="description">
+                                We undertake mobile and web app Software quality assurance and testing
+                            </div>
                         </div>
-                        <div class="description">
-                            We offer training for new candidates on wast amout of technologies
+                    </div>
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 69.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                E-business and Web applications
+                            </div>
+                            <div class="description">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/icons/Group 68.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Training
+                            </div>
+                            <div class="description">
+                                We offer training to talented freshers on full stack technolgies, only to hire them into
+                                our
+                                company
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center">
-                        Team
+        </section>
+        <section id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center">
+                            Team
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="./images/team.jpg" alt="Image" class="team-img">
-                </div>
-                <div class="col-md-6 team-text">
-                    <div class="description">
-                        Gleam IT Solutions is a bunch of tech savvy geeks founded to be part of Startup world. It's
-                        different from a normal IT company because we work as part of organization
+                    <div class="col-md-6">
+                        <img src="./images/team.jpg" alt="Image" class="team-img">
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="training">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header training-header text-center">
-                        We Offer training
+                    <div class="col-md-6 team-text">
+                        <div class="description">
+                            Gleam IT Solutions is a bunch of tech savvy geeks founded to be part of Startup world. It's
+                            different from a normal IT company because we work as part of organization
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 team-text">
-                    <div class="description">
-                        We also give hands-on experience to trainees on a live project.
-                        Our company uses and provide training in the technologies
-                    </div>
-                    <a class="btn training-btn ml-auto" href="#training" >Know More</a>
-                </div>
-                <div class="col-md-6 order-first order-md-2">
-                    <img src="./images/training.jpg" alt="Image" class="team-img">
-                </div>
-            </div> 
-        </div>
-    </section>
-    <!-- <section id="teastimonail">
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="..." alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Third slide">
+        </section>
+        <section id="training" name="training">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header training-header text-center">
+                            We Offer training
+                        </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="row">
+                    <div class="col-md-6 team-text">
+                        <div class="description">
+                            We train on live projects to give hands-on experience, and if you prove yourself with
+                            enough
+                            skillset you might be a part of organisation too.
+                            <br />
+                            <!-- <a class="btn training-btn ml-auto" href="#knowmore">Know More</a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-first order-md-2">
+                        <img src="./images/training-min.jpg" alt="Image" class="team-img">
+                    </div>
+                </div>
             </div>
-        </div>
-    </section> -->
+        </section>
+        <!-- <section id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header training-header text-center">
+                            Projects
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/helpdesk/helpdesk.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                HelpDesk
+                            </div>
+                            <div class="description">
+                                Laravel, CodeIgnitor, NextJS, NodeJs, Angular and React based applications
+                            </div>
+                            <a class="btn training-btn ml-auto" href="projects.html#helpdesk">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/dilkiawaz/dilkiawaz.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Dil ki awaz
+                            </div>
+                            <div class="description">
+                                React Native, Flutter, Android and iOS(Xamarin or Swift)
+                            </div>
+                            <a class="btn training-btn ml-auto" href="projects.html#dilkiawaz">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 service">
+                        <div class="service-content">
+                            <img src="./images/smartBus/smartbus.png" alt="Image" class="service-img">
+                            <div class="sub-header pt-3">
+                                Smart Bus
+                            </div>
+                            <div class="description">
+                                Database design, administration, and maintenance
+                            </div>
+                            <a class="btn training-btn ml-auto" href="projects.html#smartbus">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </div>
     <footer>
-        <div class="container">
+        <div class="container"><a name="contact"></a>
             <div class="row">
                 <div class="col-md-3 footer-logo-container">
                     <img src="./images/logo.png" alt="Image" class="footer-logo">
@@ -259,36 +288,30 @@
                 <div class="col-md-3 col-6">
                     <ul class="footer-list">
                         <li class="sub-header">Company</li>
-                        <li class="description"><a href="">About us</a></li>
-                        <li class="description"><a href="">services</a></li>
-                        <li class="description"><a href="">Training</a></li>
+                        <li class="description"><a href="#aboutus">About us</a></li>
+                        <li class="description"><a href="projects.html">Projects</a></li>
+                        <li class="description"><a href="#services">Services</a></li>
+                        <li class="description"><a href="#training">Training</a></li>
                     </ul>
                 </div>
-                <!-- <div class="col-md-3 col-6">
-                    <ul class="footer-list">
-                        <li class="sub-header"><a href="">Blog</a></li>
-                        <li class="description"><a href="">Project Blog</a></li>
-                        <li class="description"><a href="">Dev Blog</a></li>
-                    </ul>
-                </div> -->
                 <div class="col-md-3 col-6">
                     <ul class="footer-list">
                         <li class="sub-header">Contact</li>
-                        <li class="description"><a href="">contact@gleamitsolutions.com</a></li>
-                        <li class="description"><a href="">Tolichowki , Hyderabad</a></li>
+                        <li class="description"><a
+                                href="mailto:contact@gleamitsolutions.com">contact@gleamitsolutions.com</a></li>
+                        <li class="description"><a href="">Shaikpet, Hyderabad</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="copyright-text text-center">
-            Copyright &copy; 2020 Gleam IT Solutions
+            Copyright &copy; <span class="current-year"></span> Gleam IT Solutions
         </div>
     </footer>
+    <div class="whatsapp">
+        <a href="https://wa.me/917780191426?text=Hello" target="_blank">
+            <img src="./images/icons/whatsapp.png">
+        </a>
+    </div>
 </body>
-<script>
-    // $('.carousel').carousel({
-    //     interval: 2000
-    // })
-</script>
-
 </html>

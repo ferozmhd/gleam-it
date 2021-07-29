@@ -222,7 +222,7 @@
                             enough
                             skillset you might be a part of organisation too.
                             <br />
-                            <a class="btn training-btn ml-auto" href="#knowmore">Know More</a>
+                            <!-- <a class="btn training-btn ml-auto" href="#knowmore">Know More</a> -->
                         </div>
                     </div>
                     <div class="col-md-6 order-first order-md-2">
@@ -291,6 +291,7 @@
                     <ul class="footer-list">
                         <li class="sub-header">Company</li>
                         <li class="description"><a href="#aboutus">About us</a></li>
+                        <li class="description"><a href="projects.html">Projects</a></li>
                         <li class="description"><a href="#services">Services</a></li>
                         <li class="description"><a href="#training">Training</a></li>
                     </ul>
@@ -306,7 +307,7 @@
             </div>
         </div>
         <div class="copyright-text text-center">
-            Copyright &copy; 2020 Gleam IT Solutions
+            Copyright &copy; <span class="current-year"></span> Gleam IT Solutions
         </div>
     </footer>
     <div class="whatsapp">
@@ -316,11 +317,6 @@
     </div>
 </body>
 <script>
-    $('.carousel').carousel({
-        // interval: 2000
-        wrap: false,
-        ride: false
-    })
+    $(".current-year").html(new Date().getFullYear());
 </script>
-
 </html>

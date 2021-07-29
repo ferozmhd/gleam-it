@@ -12,6 +12,7 @@
   <link rel="icon" href="./images/icons/favicon.png" type="image/gif" sizes="16x16">
 
   <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  <script src="script.js"></script>
 
   <!-- cdn -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -30,7 +31,6 @@
     crossorigin="anonymous"></script>
 
   <script src="https://use.fontawesome.com/fa0641d298.js"></script>
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -46,9 +46,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link nav-active" href="#">Projects</a>
             <a class="nav-item nav-link" href="index.html">About us</a>
             <a class="nav-item nav-link" href="index.html#training">Training</a>
-            <a class="nav-item nav-link" href="index.html#projects">Projects</a>
             <a class="nav-item nav-link" href="#contact">Contact us</a>
           </div>
         </div>
@@ -95,7 +95,7 @@
             </div>
           </div>
           <div class="col-md-4 order-first order-md-2">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="helpdesk-carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img class="d-block" src="./images/helpdesk/joingroup1242x2688_iphone12black_portrait.png"
@@ -111,14 +111,14 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -148,14 +148,14 @@
                   <img class="d-block" src="./images/dilkiawaz/profile_Dil Ki Awaaz.png" alt="sixth slide">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="col-md-8">
@@ -239,14 +239,14 @@
                   <img class="d-block" src="./images/smartbus/sidebar_Smartbus.png" alt="fifth slide">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -257,14 +257,17 @@
     <div class="container"><a name="contact"></a>
       <div class="row">
         <div class="col-md-3 footer-logo-container">
-          <img src="./images/logo.png" alt="Image" class="footer-logo">
+          <a href="index.html">
+            <img src="./images/logo.png" alt="Image" class="footer-logo">
+          </a>
         </div>
         <div class="col-md-3 col-6">
           <ul class="footer-list">
             <li class="sub-header">Company</li>
-            <li class="description"><a href="#aboutus">About us</a></li>
-            <li class="description"><a href="#services">Services</a></li>
-            <li class="description"><a href="#training">Training</a></li>
+            <li class="description"><a href="index.html#aboutus">About us</a></li>
+            <li class="description"><a href="#">Projects</a></li>
+            <li class="description"><a href="index.html#services">Services</a></li>
+            <li class="description"><a href="index.html#training">Training</a></li>
           </ul>
         </div>
         <div class="col-md-3 col-6">
@@ -277,7 +280,7 @@
       </div>
     </div>
     <div class="copyright-text text-center">
-      Copyright &copy; 2020 Gleam IT Solutions
+      Copyright &copy; <span class="current-year"></span> Gleam IT Solutions
     </div>
   </footer>
   <div class="whatsapp">
@@ -287,17 +290,6 @@
   </div>
 </body>
 <script>
-  $('.carousel').carousel({
-    interval: 2000,
-  })
-  var r = document.querySelector(':root');
-
-  // Create a function for setting a variable value
-  function darkTheme() {
-    // Set the value of variable --blue to another value (in this case "lightblue")
-    r.style.setProperty('--light', '#000000');
-    r.style.setProperty('--dark', '#ffffff');
-  }
+  $(".current-year").html(new Date().getFullYear());
 </script>
-
 </html>

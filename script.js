@@ -1,3 +1,7 @@
+
+  $('.carousel').carousel({
+    interval: 2000,
+  })
   $(window)
     .scroll(function () {
       var windscroll = $(window).scrollTop();
@@ -44,7 +48,7 @@
     );
     return false;
   });
-
+  $(".current-year").html(new Date().getFullYear());
 // $('.sidebar a').on('click', function (e) {
 //   var scrollAnchor = $(this).attr('data-scroll'),
 //       scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 10;
